@@ -1,0 +1,29 @@
+$col-primary: #00A0DE;
+$col-dark: #00487C;
+$col-darkest: #0D0630;
+$col-highlight: #53DD6C;
+$col-grey: #FFF0F0;
+
+:root {
+
+    --hsl-col-green-400: 162 100% 15%;
+    --hsl-col-green-200: 162 100% 30%;
+    --hsl-col-red-400: 349 97% 50%;
+
+
+    --col-green-400: hsl(var(--hsl-col-green-400));
+    --col-green-200: hsl(var(--hsl-col-green-200));
+    --col-red-400: hsl(var(--hsl-col-red-400));
+
+    --col-grey-200: #e2e2e2;
+
+    --col-pink-400: hsl(28, 58%, 88%);
+
+    --h-top: 82px;
+
+    --fw-400: 400;
+    --fw-900: 700;
+
+
+    --transition: 0.2s ease-out;
+}

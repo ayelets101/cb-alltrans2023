@@ -1,0 +1,29 @@
+.contact {
+    &__contact {
+        display: flex;
+        text-decoration: none;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        color: black;
+        transition: color var(--transition);
+    }
+    a.contact__contact:hover {
+        color: var(--col-green-400);
+    }
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        background-color: var(--col-dark);
+        color: var(--col-green-400);
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 1.5rem;
+            font-weight: 900;
+            line-height: 3.5rem;
+            margin-bottom: 0;
+        }
+    }
+}

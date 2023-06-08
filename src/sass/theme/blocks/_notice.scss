@@ -1,0 +1,33 @@
+.notice {
+    .container-xl {
+        background-color: var(--col-pink-400);
+        font-size: 0.8rem;
+        padding: 2rem;
+    }
+    &__title {
+        text-align: center;
+        font-family: Georgia;
+    }
+    &__date {
+        text-align: center;
+    }
+    &__content {
+        @media (min-width:768px) {
+            columns: 2;
+        }
+        @media (min-width:992px) {
+            columns: 3;
+        }
+
+        p:first-child:first-letter {
+            color: #903;
+            float: left;
+            font-family: Georgia;
+            font-size: 50px;
+            line-height: 40px;
+            padding-top: 4px;
+            padding-right: 6px;
+            padding-left: 2px;
+          }
+    }
+}
