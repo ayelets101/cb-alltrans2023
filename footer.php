@@ -48,7 +48,8 @@ defined('ABSPATH') || exit;
                 &copy; <?=date('Y')?> Alltrans
             </div>
             <div class="col-md-4 d-flex align-items-center justify-content-end flex-wrap gap-3">
-                <a href="/privacy-policy/">Privacy & Cookies</a> |
+                <a href="/gdpr/">GDPR Policy</a> |
+                <a href="<?=get_field('terms','options')?>" download="Alltrans-Terms-and-Conditions-of-Carriage.pdf">Terms &amp; Conditions</a> |
                 <a href="https://www.chillibyte.co.uk/" rel="nofollow noopener" target="_blank" class="cb"
                     title="Digital Marketing by Chillibyte"></a>
             </div>
