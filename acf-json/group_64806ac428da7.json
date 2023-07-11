@@ -23,26 +23,6 @@
             "append": ""
         },
         {
-            "key": "field_64806ad5a22e9",
-            "label": "Contact Fax",
-            "name": "contact_fax",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_64806adca22ea",
             "label": "Contact Email",
             "name": "contact_email",
@@ -141,5 +121,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686747177
+    "modified": 1689069708
 }
