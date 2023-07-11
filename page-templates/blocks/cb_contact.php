@@ -8,10 +8,6 @@
                     <div class="contact__icon"><p><i class="fa-solid fa-phone-alt"></i></p></div>
                     <div class="contact__detail"><span class="fw-bold fs-6">Call Us</span><br><?=get_field('contact_phone','options')?></div>
                 </a>
-                <div class="contact__contact">
-                    <div class="contact__icon"><p><i class="fa-solid fa-fax"></i></p></div>
-                    <div class="contact__detail"><span class="fw-bold fs-6">Fax Us</span><br><?=get_field('contact_fax','options')?></div>
-                </div>
                 <a class="contact__contact" href="mailto:<?=get_field('contact_email','options')?>">
                     <div class="contact__icon"><p><i class="fa-solid fa-envelope"></i></p></div>
                     <div class="contact__detail"><span class="fw-bold fs-6">Email Us</span><br><?=get_field('contact_email','options')?></div>
