@@ -3,27 +3,20 @@
 defined('ABSPATH') || exit;
 
 $page_for_posts = get_option( 'page_for_posts' );
-$bg = get_the_post_thumbnail_url($page_for_posts,'full');
-
-
+$img = get_the_post_thumbnail_url($page_for_posts,'full');
 
 get_header();
 ?>
 <main id="main">
-<!-- hero -->
-<section id="hero" class="hero d-flex align-items-center hero--default">
-    <div class="overlay"></div>
-    <div class="hero__inner container-xl">
-        <div class="row h-100">
-            <div class="col-lg-6 hero__content d-flex flex-column justify-content-center order-2 order-lg-1 py-5" data-aos="fade">
-                <h1><?=get_the_title($page_for_posts)?></h1>
-            </div>
-            <div class="col-lg-6 hero__image order-1 order-lg-2" style="background-image:url(<?=$bg?>)">
-            </div>
+<link rel="preload" as="image" href="<?=$img?>">
+<header class="hero <?=$class?>">
+    <div class="container-xl px-0" style="background-image: url(<?=$img?>)">
+        <div class="overlay"></div>
+        <div class="titles">
+            <h1><?=get_the_title($page_for_posts)?></h1>
         </div>
     </div>
-    <div class="overlay--bottom"></div>
-</section>
+</header>
 
     <div class="container-xl py-5">
         <?php
@@ -32,6 +25,7 @@ get_header();
         }
 
         $cats = get_categories(array('exclude' => array(32)));
+        /*
         ?>
         <div class="filters mb-4">
             <?php
@@ -39,10 +33,12 @@ get_header();
         foreach ($cats as $cat) {
             echo '<button class="btn btn-outline-primary me-2 mb-2" data-filter=".' . cbslugify($cat->name) . '">' . $cat->cat_name . '</button>';
         }
-        echo '<a href="/events/" class="btn btn-outline-primary me-2 mb-2">Events</a>';
         ?>
         </div>
-        <div class="row w-100" id="grid">
+        <?php
+        */
+        ?>
+        <div class="row w-100 news" id="grid">
             <?php
             while (have_posts()) {
                 the_post();
@@ -56,19 +52,14 @@ get_header();
                 $catclass = implode(' ', array_map( 'cbslugify', $category ) );
                 $category = implode(', ',$category);
 
-                if (has_category('event')) {
-                    $the_date = get_field('start_date',get_the_ID());
-                }
-                else {
-                    $the_date = get_the_date('jS F, Y');
-                }
+                $the_date = get_the_date('jS F, Y');
 
                 ?>
-            <div class="grid_item col-lg-4 col-md-6 p-0 <?=$catclass?>">
-                <a href="<?=get_the_permalink(get_the_ID())?>">
+            <div class="grid_item col-lg-4 col-md-6 px-2 <?=$catclass?>">
+                <a href="<?=get_the_permalink(get_the_ID())?>" class="news__item">
                     <div class="card card--<?=$flashcat?>">
                         <div class="news__image_container">
-                            <div class="news__flash news__flash--<?=$flashcat?>"><?=$category?></div>
+                            <!--div class="news__flash news__flash--<?=$flashcat?>"><?=$category?></div -->
                             <div class="news__image" style="background-image:url('<?=get_the_post_thumbnail_url(get_the_ID(),'large')?>')"></div>
                         </div>
                         <div class="news__inner">
@@ -87,12 +78,11 @@ get_header();
             }
             ?>
         </div>
-<!--        <div class="mt-5">
+        <div class="mt-5">
         <?php
         numeric_posts_nav();
         ?>
         </div>
-        -->
     </div>
 </main>
 <?php
