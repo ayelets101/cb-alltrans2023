@@ -84,7 +84,7 @@
 
 // single posts
 .blog {
-    margin-top: calc(var(--h-top) + 1rem);
+    margin-top: var(--h-top);
     &__image {
         margin-bottom: 1rem;
         aspect-ratio: 16 / 9;
