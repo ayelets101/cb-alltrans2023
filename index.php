@@ -55,7 +55,7 @@ get_header();
                 $the_date = get_the_date('jS F, Y');
 
                 ?>
-            <div class="grid_item col-lg-4 col-md-6 px-2 <?=$catclass?>">
+            <div class="grid_item col-lg-4 col-md-6 px-2 mb-3 <?=$catclass?>">
                 <a href="<?=get_the_permalink(get_the_ID())?>" class="news__item">
                     <div class="card card--<?=$flashcat?>">
                         <div class="news__image_container">
