@@ -11,7 +11,7 @@ $img = get_the_post_thumbnail_url(get_the_ID(),'full');
     $sidebar = array();
     $after;
     ?>
-    <section class="breadcrumbs container-xl">
+    <section class="breadcrumbs container-xl pt-3">
     <?php
     if (function_exists('yoast_breadcrumb')) {
         yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
