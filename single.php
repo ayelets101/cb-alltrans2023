@@ -69,7 +69,7 @@ $img = get_the_post_thumbnail_url(get_the_ID(),'full');
         $cats = get_the_category();
         $ids = wp_list_pluck($cats,'term_id');
         $r = new WP_Query(array(
-            'category__in' => $ids,
+            // 'category__in' => $ids,
             'posts_per_page' => 4,
             'post__not_in' => array(get_the_ID())
         ));
