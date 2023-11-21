@@ -23221,6 +23221,11 @@ header.hero h2, header.hero .h2 {
   font-weight: var(--fw-900);
 }
 
+pic {
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
 a.noline {
   text-decoration: none;
 }
