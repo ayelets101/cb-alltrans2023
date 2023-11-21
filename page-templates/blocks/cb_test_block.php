@@ -20,4 +20,4 @@ if ($r->have_posts()) {
         </div>
     </div>
 </section>
-
+}
