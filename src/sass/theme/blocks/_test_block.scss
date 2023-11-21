@@ -1,9 +1,11 @@
 .test_cols {
     &__img {
         margin-bottom: 1rem;
+        background: linear-gradient(60deg, lightpink, lightblue)
     }
     &__name {
         text-align: center;
         font-weight: var(--fw-900);
+        border-radius: 10%
     }
 }
