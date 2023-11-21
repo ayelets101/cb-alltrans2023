@@ -23213,7 +23213,8 @@ header.hero h2, header.hero .h2 {
 }
 
 .test_block {
-  background-color: aqua;
+  border-radius: 15%;
+  background-color: lightcoral;
 }
 .test_block__img {
   margin-bottom: 1rem;
