@@ -23212,9 +23212,11 @@ header.hero h2, header.hero .h2 {
   gap: 1rem;
 }
 
+.test_block {
+  background: linear-gradient(60deg, lightpink, lightblue);
+}
 .test_block__img {
   margin-bottom: 1rem;
-  background: linear-gradient(60deg, lightpink, lightblue);
 }
 .test_block__name {
   text-align: center;

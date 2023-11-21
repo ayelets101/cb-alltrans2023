@@ -7,11 +7,11 @@
                 the_row();
                 ?>
             <div class="col-sm-2 col-md-4 col-lg-3">
-                <div class="test_cols__card">
-                    <div class="test_cols__img">
+                <div class="test_block__card">
+                    <div class="test_block__img">
                         <img src="<?=wp_get_attachment_image_url(get_sub_field('photo'),'full')?>">
                     </div>
-                    <div class="test_cols__name"><?=get_sub_field('name')?></div>
+                    <div class="test_block__name"><?=get_sub_field('name')?></div>
                 </div>
             </div>
                 <?php
