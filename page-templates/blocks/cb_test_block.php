@@ -8,7 +8,7 @@
                 ?>
             <div class="col-sm-2 col-md-4 col-lg-3">
                 <div class="test_block__card">
-                    <div class="test_block pic">
+                    <div class="test_block new_picture">
                         <img src="<?=wp_get_attachment_image_url(get_sub_field('photo'),'full')?>">
                     </div>
                     <div class="test_block__name"><?=get_sub_field('name')?></div>
