@@ -23212,13 +23212,9 @@ header.hero h2, header.hero .h2 {
   gap: 1rem;
 }
 
-.test_block {
-  border-radius: 15%;
-  background-color: lightcoral;
-}
 .test_block__img {
   margin-bottom: 1rem;
-  border-radius: 15%;
+  border-radius: 50%;
 }
 .test_block__name {
   text-align: center;
