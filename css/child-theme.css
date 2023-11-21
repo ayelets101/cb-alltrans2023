@@ -22990,7 +22990,7 @@ footer .container-xl {
 
 header.hero {
   margin-top: var(--h-top);
-  background: linear-gradient(60deg, lightpink 0%, plum 50%);
+  background-color: black;
 }
 header.hero .container-xl {
   position: relative;
@@ -23007,11 +23007,11 @@ header.hero .container-xl .overlay {
   inset: 0;
   z-index: -1;
   border-radius: 10%;
-  background: lightblue;
+  background: rgba(0, 0, 0, 0.6);
 }
 @media (min-width: 768px) {
   header.hero .container-xl .overlay {
-    background: linear-gradient(black 0%, gray 50%, white 75%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, transparent 50%);
   }
 }
 header.hero .titles {
