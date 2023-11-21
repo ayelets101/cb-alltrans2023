@@ -23212,6 +23212,9 @@ header.hero h2, header.hero .h2 {
   gap: 1rem;
 }
 
+.test_block {
+  border: pink;
+}
 .test_block__img {
   margin-bottom: 1rem;
   border-radius: 15%;
