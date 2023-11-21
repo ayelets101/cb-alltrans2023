@@ -1,6 +1,6 @@
 header.hero {
     margin-top: var(--h-top);
-    background-color: black;
+    background-color: linear-gradinet(60deg, lightpink 0%, plum 50%;    
     .container-xl {
         position: relative;
         z-index: 0;
@@ -20,9 +20,10 @@ header.hero {
             position: absolute;
             inset: 0;
             z-index: -1;
-            background: hsl(0 0% 0% / 0.6);
+            background: lightblue; //hsl(0 0% 0% / 0.6);//
             @media (min-width:768px) {
-                background: linear-gradient(90deg, hsl(0 0% 0% / 0.6) 0%, transparent 50% );
+                background: linear-gradient(black 0%, gray 50%, white 75%)
+                //                linear-gradient(90deg, hsl(0 0% 0% / 0.6) 0%, transparent 50% );
             }
         }
     }
