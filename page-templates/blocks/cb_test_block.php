@@ -17,11 +17,7 @@ if ($r->have_posts()) {
                         </div>
                     </a>
                 </div>
-                <?php
-            }
-            ?>
         </div>
     </div>
 </section>
-<?php
-}
+
