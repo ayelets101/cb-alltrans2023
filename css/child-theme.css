@@ -23006,6 +23006,7 @@ header.hero .container-xl .overlay {
   position: absolute;
   inset: 0;
   z-index: -1;
+  border-radius: 10%;
   background: lightblue;
 }
 @media (min-width: 768px) {

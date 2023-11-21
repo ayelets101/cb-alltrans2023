@@ -20,6 +20,7 @@ header.hero {
             position: absolute;
             inset: 0;
             z-index: -1;
+            border-radius: 10%;
             background: lightblue; //hsl(0 0% 0% / 0.6);//
             @media (min-width:768px) {
                 background: linear-gradient(black 0%, gray 50%, white 75%)
