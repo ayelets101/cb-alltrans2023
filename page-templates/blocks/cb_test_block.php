@@ -3,8 +3,8 @@ $r = new WP_Query(array(
     'post_type' => 'post',
     'posts_per_page' => 4,
 ));
-if ($r->have_posts()) {
-?>
+if ($r->have_posts())
+    ?>
 <section class="related pb-5 test_block">
     <div class="container-xl">
         <h2>Test block</h2>
@@ -20,4 +20,3 @@ if ($r->have_posts()) {
         </div>
     </div>
 </section>
-}
