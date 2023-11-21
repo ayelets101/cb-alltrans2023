@@ -23214,11 +23214,11 @@ header.hero h2, header.hero .h2 {
 
 .test_block__img {
   margin-bottom: 1rem;
+  border-radius: 10%;
 }
 .test_block__name {
   text-align: center;
   font-weight: var(--fw-900);
-  border-radius: 10%;
 }
 
 a.noline {
