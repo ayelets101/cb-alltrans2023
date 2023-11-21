@@ -23217,7 +23217,7 @@ header.hero h2, header.hero .h2 {
   font-weight: var(--fw-900);
 }
 
-.test_img {
+.test_block__img {
   margin-bottom: 1rem;
   border-radius: 15%;
 }
