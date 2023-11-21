@@ -1,12 +1,11 @@
 .test_block {
-
+    &__img {
+        margin-bottom: 1rem;
+        border-radius: 15%;
+    }
     &__name {
         text-align: center;
         font-weight: var(--fw-900);
        
     }
-}
-.test_block__img {
-    margin-bottom: 1rem;
-    border-radius: 15%
 }
